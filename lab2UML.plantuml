@@ -1,0 +1,109 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Aeroblast {
+  + Aeroblast(): 
+  # calcCriticalHit(Pokemon, Pokemon): double
+  # describe(): String
+}
+class Bibarel {
+  + Bibarel(String, int): 
+}
+class Bidoof {
+  + Bidoof(String, int): 
+}
+class Blizzard {
+  + Blizzard(): 
+  # describe(): String
+  # applyOppEffects(Pokemon): void
+}
+class Electabuzz {
+  + Electabuzz(String, int): 
+}
+class Fly {
+  + Fly(): 
+  # describe(): String
+}
+class FocusEnergy {
+  + FocusEnergy(): 
+  # describe(): String
+  # calcCriticalHit(Pokemon, Pokemon): double
+}
+class HydroPump {
+  + HydroPump(): 
+  # describe(): String
+}
+class LightScreen {
+  + LightScreen(): 
+  # applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class Magnitude {
+  + Magnitude(): 
+  # describe(): String
+  - randPower(): int
+  # applyOppEffects(Pokemon): void
+}
+class Milotic {
+  + Milotic(String, int): 
+}
+class MyPokemon {
+  + MyPokemon(): 
+  + main(String[]): void
+}
+class Sentret {
+  + Sentret(String, int): 
+}
+class SleepTalk {
+  + SleepTalk(): 
+  # describe(): String
+  # applyOppEffects(Pokemon): void
+}
+class Staraptor {
+  + Staraptor(String, int): 
+}
+class Thunder {
+  + Thunder(): 
+  + applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class ThunderWave {
+  + ThunderWave(): 
+  # applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class TripleKick {
+  + TripleKick(): 
+  # describe(): String
+}
+
+Bibarel      -[#595959,dashed]->  Blizzard    : "«create»"
+Bibarel      -[#595959,dashed]->  FocusEnergy : "«create»"
+Bibarel      -[#595959,dashed]->  ThunderWave : "«create»"
+Bibarel      -[#595959,dashed]->  TripleKick  : "«create»"
+Bidoof       -[#595959,dashed]->  Blizzard    : "«create»"
+Bidoof       -[#595959,dashed]->  FocusEnergy : "«create»"
+Bidoof       -[#595959,dashed]->  ThunderWave : "«create»"
+Electabuzz   -[#595959,dashed]->  HydroPump   : "«create»"
+Electabuzz   -[#595959,dashed]->  LightScreen : "«create»"
+Electabuzz   -[#595959,dashed]->  Magnitude   : "«create»"
+Milotic      -[#595959,dashed]->  HydroPump   : "«create»"
+Milotic      -[#595959,dashed]->  LightScreen : "«create»"
+Milotic      -[#595959,dashed]->  Magnitude   : "«create»"
+Milotic      -[#595959,dashed]->  Thunder     : "«create»"
+MyPokemon    -[#595959,dashed]->  Bibarel     : "«create»"
+MyPokemon    -[#595959,dashed]->  Bidoof      : "«create»"
+MyPokemon    -[#595959,dashed]->  Electabuzz  : "«create»"
+MyPokemon    -[#595959,dashed]->  Milotic     : "«create»"
+MyPokemon    -[#595959,dashed]->  Sentret     : "«create»"
+MyPokemon    -[#595959,dashed]->  Staraptor   : "«create»"
+Sentret      -[#595959,dashed]->  Aeroblast   : "«create»"
+Sentret      -[#595959,dashed]->  Fly         : "«create»"
+Sentret      -[#595959,dashed]->  Magnitude   : "«create»"
+Sentret      -[#595959,dashed]->  SleepTalk   : "«create»"
+Staraptor    -[#595959,dashed]->  Blizzard    : "«create»"
+Staraptor    -[#595959,dashed]->  ThunderWave : "«create»"
+@enduml
