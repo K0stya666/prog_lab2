@@ -1,6 +1,5 @@
 package lab2.attacks.StatusMove;
 import ru.ifmo.se.pokemon.*;
-import static lab2.MoveControl.*;
 
 public class FocusEnergy extends PhysicalMove{
     public FocusEnergy() {
